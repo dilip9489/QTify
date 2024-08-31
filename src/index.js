@@ -20,15 +20,6 @@ import App from "./App";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    {/* <div className="container">
-      <div className="card">
-        <h1>Animation</h1>
-        <img
-          src="https://images.pexels.com/photos/799443/pexels-photo-799443.jpeg?auto=compress&cs=tinysrgb&w=600"
-          alt="NotAvailable"
-        />
-      </div>
-    </div> */}
     <App />
   </React.StrictMode>
 );
