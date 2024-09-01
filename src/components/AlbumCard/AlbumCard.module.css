@@ -16,10 +16,7 @@ background: rgba(255, 255, 255, 1);
 
 
 }
-.img {
-width: 159px;
-height: 170px;
- }
+ 
 
 /* .follower {
  
@@ -46,7 +43,7 @@ background-color: black;
 } */
 
 
-.album {
+/* .album {
 width: auto;
 height: 27px;
 font-family: Poppins;
@@ -58,7 +55,7 @@ margin-top: 5px;
 color: rgba(255, 255, 255, 1);
 
 
-}
+} */
 body{
     background-color: black;
 

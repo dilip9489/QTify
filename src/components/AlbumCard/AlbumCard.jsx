@@ -16,7 +16,10 @@ const AlbumCard = ({ albumImage, albumName, follows }) => {
         component="img"
         image={albumImage}  // Use the albumImage prop
         alt={`${albumName}`}
-        className={styles.img}
+         
+        sx={{height: '170px',
+          width:'100%',
+        }}
       />
 
       {/* Bottom section (Album name and Follows) */}
@@ -57,7 +60,20 @@ const AlbumCard = ({ albumImage, albumName, follows }) => {
        
       </CardContent>
     </Card>
-    <Typography variant="h6" component="div"  className={styles.album}>
+    <Typography variant="h6" component="div"   
+       sx={{
+width: 'auto',
+height: '27px',
+fontFamily: 'Poppins',
+fontSize: '14px',
+fontWeight: 400,
+lineHeight: '21px',
+textAlign: 'left',
+marginTop: '5px',
+color: 'rgba(255, 255, 255, 1)',
+
+}}
+  >
           {albumName}
         </Typography>
     </div>
