@@ -1,0 +1,66 @@
+.container {
+    width: 159px;
+    height: 232px; 
+     
+   
+}
+
+.card {
+width: 159px;
+height: 205px;
+gap: 0px;
+border-radius: 10px 10px 10px 10px;
+opacity: 0px;
+overflow: hidden;
+background: rgba(255, 255, 255, 1);
+
+
+}
+.img {
+width: 159px;
+height: 170px;
+ }
+
+/* .follower {
+ 
+width: 71 px;
+height: 23px; 
+Top:176px;
+gap: 1px;
+border-radius: 10px;
+left: 8px;
+padding: 4px 8px 4px 8px; */
+
+    
+/* font-family: Poppins;
+font-size: 10px;
+font-weight: 400;
+line-height: 15px;
+text-align: center;
+color: rgba(255, 255, 255, 1);
+background-color: black;
+ 
+ 
+
+
+} */
+
+
+.album {
+width: auto;
+height: 27px;
+font-family: Poppins;
+font-size: 14px;
+font-weight: 400;
+line-height: 21px;
+text-align: left;
+margin-top: 5px;
+color: rgba(255, 255, 255, 1);
+
+
+}
+body{
+    background-color: black;
+
+}
+   

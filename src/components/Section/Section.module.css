@@ -1,0 +1,34 @@
+.sectionContainer {
+  padding: 20px;
+}
+
+.sectionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  color:  rgba(255, 255, 255, 1);
+
+}
+
+.collapseButton {
+   background-color: black;
+  color:  #00e676;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: Poppins, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.collapseButton:hover {
+  background-color: #333;
+}
+
+.albumsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Adjust as per design */
+  gap: 16px;
+}
