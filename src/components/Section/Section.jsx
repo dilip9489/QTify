@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import AlbumCard from '../AlbumCard/AlbumCard';
 import styles from '../Section/Section.module.css';
+import Carousel from '../Carousel/Carousel';
 
  
 const Section = () => {
@@ -13,7 +14,6 @@ const Section = () => {
     const fetchTopAlbums = async () => {
       try {
         const response = await axios.get('https://qtify-backend-labs.crio.do/albums/top');
-         
         setAlbums(response.data);
       } catch (error) {
         console.error('Error fetching albums:', error);
@@ -33,12 +33,24 @@ const Section = () => {
       <div className={styles.sectionHeader}>
         <h2>Top Albums</h2>
         <button className={styles.collapseButton} onClick={handleCollapse}>
-          {collapsed ? 'Expand' : 'Collapse'}
+          {collapsed ? 'Show All' : 'Collapse'}
         </button>
       </div>
 
-      {/* Albums Grid (conditionally render if not collapsed) */}
-      {!collapsed && (
+      {/* Conditionally Render Carousel or Grid */}
+      {collapsed ? (
+        <Carousel
+          items={albums}
+          renderItem={(album) => (
+            <AlbumCard
+              key={album.id}
+              albumImage={album.image}
+              albumName={album.title}
+              follows={album.follows}
+            />
+          )}
+        />
+      ) : (
         <div className={styles.albumsGrid}>
           {albums.map((album) => (
             <AlbumCard
