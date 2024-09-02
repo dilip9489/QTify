@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, CardMedia, CardContent, Typography, Chip, Box } from '@mui/material';
+import { Card, CardMedia, CardContent, Typography, Chip} from '@mui/material';
 import styles from "../AlbumCard/AlbumCard.module.css";
 
  
@@ -9,7 +9,17 @@ const AlbumCard = ({ albumImage, albumName, follows }) => {
     <div className= {styles.container}>
     <Card
     
-    className={styles.card}
+     sx={{ height: '205px',}}
+//     sx={{
+//       width: '159px',
+//     height: '205px',
+// /* gap: 0px; */
+//     borderRadius: '10px 10px 10px 10px',
+    
+//     overflow: 'hidden',
+//    backgroundColor: 'rgba(255, 255, 255, 1)',
+
+//     }}
     >
       {/* Album Image */}
       <CardMedia
