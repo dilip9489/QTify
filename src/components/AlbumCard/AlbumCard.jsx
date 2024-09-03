@@ -4,7 +4,7 @@ import styles from "../AlbumCard/AlbumCard.module.css";
 
  
 
-const AlbumCard = ({ albumImage, albumName, follows }) => {
+const AlbumCard = ({ albumImage, albumName, follows, labelType  }) => {
   return (
     <div className= {styles.container}>
     <Card
@@ -48,7 +48,7 @@ const AlbumCard = ({ albumImage, albumName, follows }) => {
 
         {/* Number of Follows using Chip */}
         <Chip
-          label={`${follows} Follows`}
+          label={`${follows} ${labelType === 'likes' ? 'Likes' : 'Follows'}`} 
           size="small"
           
           sx={{

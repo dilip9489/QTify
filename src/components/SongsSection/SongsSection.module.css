@@ -1,0 +1,56 @@
+.sectionContainer {
+  padding: 20px;
+}
+
+.sectionHeader {
+  /* Songs */
+
+  /* position: absolute; */
+  width: 63px;
+  height: auto;
+  left: 32px;
+  /* top: 1000px; */
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 20px;
+  /* identical to box height */
+
+  color: #ffffff;
+}
+
+/* .tabContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 28px;
+
+  margin-bottom: 20px;
+
+  color: rgba(255, 255, 255, 1);
+} */
+
+/* .tab {
+  min-width: 100px;  
+   
+} */
+/* {
+     
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 28px;
+
+position: absolute;
+width: 331px;
+height: 34px;
+left: 32px;
+ 
+
+
+} */
