@@ -41,6 +41,7 @@ const SongsSection = () => {
           "https://qtify-backend-labs.crio.do/songs"
         );
         setAlbums(response.data);
+        console.log(response.data);
       } catch (error) {
         console.error("Error fetching songs:", error);
       }
@@ -57,7 +58,11 @@ const SongsSection = () => {
   const filteredAlbums =
     selectedGenre === "All"
       ? albums
-      : albums.filter((album) => album.genre === selectedGenre);
+      : albums.filter((album) =>
+          album.genre && typeof album.genre.key === "string"
+            ? album.genre.key.toLowerCase() === selectedGenre.toLowerCase()
+            : false
+        );
 
   return (
     <div className={styles.sectionContainer}>

@@ -34,23 +34,23 @@ const Carousel = ({ items, renderItem }) => {
         ref={swiperRef}
         modules={[Navigation]}
         // spaceBetween={30}
-        slidesPerView={1}
+        slidesPerView={3}
         navigation={false}
         breakpoints={{
           640: {
-            slidesPerView: 1,
+            slidesPerView: 3.5,
             spaceBetween: 10,
           },
           768: {
-            slidesPerView: 2,
+            slidesPerView: 4.5,
             spaceBetween: 15,
           },
           1024: {
-            slidesPerView: 6,
+            slidesPerView: 6.5,
             spaceBetween: 20,
           },
           1440: {
-            slidesPerView: 6,
+            slidesPerView: 6.5,
             spaceBetween: 25,
           },
         }}

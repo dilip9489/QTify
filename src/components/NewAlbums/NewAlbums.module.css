@@ -1,6 +1,10 @@
 .sectionContainer {
   padding: 20px;
   border-bottom: 2px solid #00e676;
+  margin-left: 0px;
+  margin-right: 0px;
+  width: 1440px;
+  height: 330px;
 }
 
 .sectionHeader {
@@ -9,8 +13,9 @@
   align-items: center;
   margin-bottom: 16px;
   color: rgba(255, 255, 255, 1);
-  margin-left: 15px;
+  /* margin-left: 12px; */
   font-family: Poppins, sans-serif;
+  margin-right: 175px;
 }
 
 .collapseButton {

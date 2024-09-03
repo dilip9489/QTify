@@ -3,7 +3,9 @@ import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
 import { BrowserRouter as Router } from "react-router-dom";
 import Section from "./components/Section/Section";
-import AlbumsContainer from "./components/AlbumsContainer/AlbumsContainer";
+// import AlbumsContainer from "./components/AlbumsContainer/AlbumsContainer";
+import NewAlbums from "./components/NewAlbums/NewAlbums";
+
 import SongsSection from "./components/SongsSection/SongsSection";
 
 function App() {
@@ -16,7 +18,7 @@ function App() {
       <Navbar searchData={searchData} />
       <Hero />
       <Section />
-      <AlbumsContainer />
+      <NewAlbums />
       <SongsSection />
     </Router>
   );

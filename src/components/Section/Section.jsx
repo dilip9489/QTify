@@ -1,10 +1,9 @@
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
-import AlbumCard from '../AlbumCard/AlbumCard';
-import styles from '../Section/Section.module.css';
-import Carousel from '../Carousel/Carousel';
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+import AlbumCard from "../AlbumCard/AlbumCard";
+import styles from "../Section/Section.module.css";
+import Carousel from "../Carousel/Carousel";
 
- 
 const Section = () => {
   const [albums, setAlbums] = useState([]);
   const [collapsed, setCollapsed] = useState(false);
@@ -13,10 +12,12 @@ const Section = () => {
   useEffect(() => {
     const fetchTopAlbums = async () => {
       try {
-        const response = await axios.get('https://qtify-backend-labs.crio.do/albums/top');
+        const response = await axios.get(
+          "https://qtify-backend-labs.crio.do/albums/top"
+        );
         setAlbums(response.data);
       } catch (error) {
-        console.error('Error fetching albums:', error);
+        console.error("Error fetching albums:", error);
       }
     };
     fetchTopAlbums();
@@ -28,12 +29,12 @@ const Section = () => {
   };
 
   return (
-    <div className={styles.sectionContainer}>
+    <div sx={{ padding: "20px" }}>
       {/* Top Albums Title and Collapse Button */}
       <div className={styles.sectionHeader}>
         <h2>Top Albums</h2>
         <button className={styles.collapseButton} onClick={handleCollapse}>
-          {collapsed ? 'Show All' : 'Collapse'}
+          {collapsed ? "Show All" : "Collapse"}
         </button>
       </div>
 
