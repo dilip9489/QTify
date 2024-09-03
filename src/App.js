@@ -7,6 +7,8 @@ import AlbumsContainer from "./components/AlbumsContainer/AlbumsContainer";
 // import NewAlbums from "./components/NewAlbums/NewAlbums";
 
 import SongsSection from "./components/SongsSection/SongsSection";
+import FAQ from "./components/FAQ/FAQ";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   const searchData = [];
@@ -20,6 +22,8 @@ function App() {
       <AlbumsContainer />
 
       <SongsSection />
+      <FAQ />
+      <Footer />
     </Router>
   );
 }

@@ -1,0 +1,31 @@
+/* FAQ.module.css */
+
+.faqContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  background-color: black;
+  border-bottom: 2px solid gray;
+}
+
+.faqTitle {
+  font-size: 40px;
+  font-family: "Poppins";
+  color: rgba(255, 255, 255, 1);
+  display: block;
+  /* margin-bottom: 40px; */
+}
+
+.accordions {
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 20px;
+  margin-top: 25px;
+}
+.accordions1 {
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 20px;
+}
