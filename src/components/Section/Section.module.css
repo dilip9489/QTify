@@ -7,13 +7,13 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 16px;
-  color:  rgba(255, 255, 255, 1);
-
+  color: rgba(255, 255, 255, 1);
+  margin-left: 20px;
 }
 
 .collapseButton {
-   background-color: black;
-  color:  #00e676;
+  background-color: black;
+  color: #00e676;
   border: none;
   padding: 8px 16px;
   border-radius: 4px;
@@ -29,6 +29,9 @@
 
 .albumsGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Adjust as per design */
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(150px, 1fr)
+  ); /* Adjust as per design */
   gap: 16px;
 }
