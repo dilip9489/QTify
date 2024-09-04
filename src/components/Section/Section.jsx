@@ -6,7 +6,7 @@ import Carousel from "../Carousel/Carousel";
 
 const Section = () => {
   const [albums, setAlbums] = useState([]);
-  const [collapsed, setCollapsed] = useState(false);
+  const [collapsed, setCollapsed] = useState(true);
 
   // Fetch top albums using Axios
   useEffect(() => {
